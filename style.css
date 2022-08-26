@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Mulish:wght@200;400;600;700&family=Oswald:wght@400;700&family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgb(212, 211, 220),
+    rgb(239, 238, 188)
+  );
+  font-family: "Lato", sans-serif;
+}
+
+#header {
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+#pokemonContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* grid-template-columns: repeat(auto-fill, 175px); */
+  flex-wrap: wrap;
+  grid-gap: 15px;
+  max-width: 1200px;
+}
+
+.card {
+  height: 268px;
+  width: 175px;
+
+  border-radius: 15px;
+  position: relative;
+}
+
+.iconHolder {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 125px;
+  height: 125px;
+  background-color: rgb(241, 250, 254);
+
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pokemonNumber {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  top: 62.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 25px;
+  width: 55px;
+  border-radius: 8.5px;
+  /* background-color: rgb(202, 233, 203); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemonName {
+  font-family: "Lato", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  position: absolute;
+  top: 76.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemonType {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  top: 87.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
